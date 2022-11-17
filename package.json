@@ -1,0 +1,14 @@
+{
+  "name": "calculadora-calorias",
+  "version": "1.0.0",
+  "description": "Calculadora de calorias",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch assets/scss/index.scss:assets/css/index.css"
+  },
+  "author": "Alexandre Cavalcante",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.56.1"
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora de Calorias</title>
+        <!-- === JS === -->
+        <script defer src="./assets/js/index.js"></script>
+        <!-- === CSS === -->
+        <link rel="stylesheet" href="./assets/css/index.css">
+    </head>
+    <body>
+
+        <header class="container-header">
+            <h1 class="title-header">Calculadora de Calorias</h1>
+
+            <div class="dados-corporal">
+                <input type="text" id="idade" placeholder="Sua Idade">
+            </div>
+
+            <div class="dados-corporal">
+                <input type="text" id="peso" placeholder="Seu Peso">
+                <input type="text" id="altura" placeholder="Sua Altura">
+            </div>
+
+            <div class="dados-corporal">
+                <select id="nivel-atividade-fisica">
+                    <option disabled value="1">Nìvel de atividade</option>
+                    <option value="1.2">Muito baixa</option>
+                    <option value="1.375">baixa</option>
+                    <option value="1.55">Normal</option>
+                    <option value="1.725">Alta</option>
+                    <option value="1.9">Muito Alta</option>
+                </select>
+
+                <select id="genero">
+                    <option disabled value="1">Gênero</option>
+                    <option value="Homem">Homem</option>
+                    <option value="Mulher">Mulher</option>
+                </select>
+            </div>
+
+            <button class="btn-calcular">Calcular!</button>
+        </header>
+
+        <main class="container-main">
+            <h2 class="title-main">Aqui está o resultado:</h2>
+            <div class="container-resultado-wrapper">
+                
+            </div>
+        </main>
+    </body>
+</html>
