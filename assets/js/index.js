@@ -1,3 +1,31 @@
+// DARK-LIGHT
+const toggleDarkLight = document.getElementById("toggle-dark")
+const containerHeader = document.querySelector(".container-header")
+const containerMain = document.querySelector(".container-main")
+
+toggleDarkLight.addEventListener("click",function(){
+
+    if(this.classList.toggle("bi-moon")){
+        this.classList.remove("bi-sun-fill")
+        containerHeader.style.background="#fff"
+        containerHeader.style.color="#000"
+        containerHeader.style.transition="all .4s"
+        containerMain.style.background="#fff"
+        containerMain.style.color="#000"
+
+    } else if(this.classList.toggle("bi-sun-fill")){
+        this.classList.remove("bi-moon")
+        containerHeader.style.color="#fff"
+        containerHeader.style.background="#000"
+        containerMain.style.color="#fff"
+        containerMain.style.background="#000"
+        containerMain.style.transition="all .4s"
+    }
+    
+}) 
+
+
+// CALCULADORA DE CALORIAS
 const btnCalcular = document.querySelector(".btn-calcular")
 
 btnCalcular.addEventListener("click", () => {

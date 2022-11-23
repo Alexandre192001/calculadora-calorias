@@ -25,6 +25,9 @@
 .container-header h1 {
   position: relative;
 }
+.container-header h1 i {
+  cursor: pointer;
+}
 .container-header h1::before {
   position: absolute;
   content: "";
@@ -87,6 +90,28 @@
 }
 .container-main .container-resultado-wrapper .resultado-values p span {
   color: rgb(76, 138, 61);
+}
+
+@media (max-width: 660px) {
+  .container-main .container-resultado-wrapper {
+    width: 90%;
+  }
+}
+@media (max-width: 350px) {
+  .container-header {
+    height: 40rem;
+  }
+  .container-header .title-header {
+    font-size: 20px;
+  }
+  .container-header .title-header::before {
+    width: 3rem;
+  }
+  .container-header .dados-corporal {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

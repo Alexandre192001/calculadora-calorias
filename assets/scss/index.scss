@@ -11,6 +11,7 @@ $font-josefin: "Josefin Sans";
 
 ::placeholder{
     color: #fff;
+    
 }
 
 .container-header {
@@ -27,6 +28,11 @@ $font-josefin: "Josefin Sans";
 
     h1 {
         position: relative;
+
+
+        i{
+            cursor: pointer;
+        }
 
         &::before {
             position: absolute;
@@ -99,6 +105,33 @@ $font-josefin: "Josefin Sans";
                     color: rgb(76, 138, 61);
                 }
             }
+        }
+    }
+}
+
+@media(max-width:660px){
+    .container-main{
+        .container-resultado-wrapper{
+            width: 90%;
+        }
+    }
+}
+
+@media(max-width:350px){
+    .container-header{
+        height: 40rem;
+        .title-header{
+            font-size: 20px;
+
+            &::before{
+                width: 3rem;
+            }
+        }
+
+        .dados-corporal{
+            display: flex;
+            gap: .5rem;
+            flex-direction: column;
         }
     }
 }
