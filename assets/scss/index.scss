@@ -15,7 +15,7 @@ $font-josefin: "Josefin Sans";
 }
 
 .container-header {
-    background-color: #353535f5;
+    background-color:#000;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -26,13 +26,16 @@ $font-josefin: "Josefin Sans";
     align-items: center;
     justify-content: center;
 
+    i{
+            cursor: pointer;
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            font-size: 30px;
+        }
+
     h1 {
         position: relative;
-
-
-        i{
-            cursor: pointer;
-        }
 
         &::before {
             position: absolute;
@@ -61,14 +64,14 @@ $font-josefin: "Josefin Sans";
         padding: 1rem;
         color: #fff;
         cursor: pointer;
-        background-image: linear-gradient(to left, #08a,#02a,#08a);
+        background-color: rgb(31, 43, 80);
     }
 }
 
 .container-main{
     width: 100%;
     height: 30rem;
-    background-color: #1a1a1b;
+    background-color: #000;
     color: #fff;
     display: flex;
     overflow: hidden;

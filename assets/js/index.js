@@ -24,7 +24,6 @@ toggleDarkLight.addEventListener("click",function(){
     
 }) 
 
-
 // CALCULADORA DE CALORIAS
 const btnCalcular = document.querySelector(".btn-calcular")
 

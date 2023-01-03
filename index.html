@@ -15,9 +15,8 @@
     <body>
 
         <header class="container-header">
-            <h1 class="title-header">Calculadora de Calorias  <i class="bi bi-sun-fill" id="toggle-dark"></i></h1>
-
-               
+            <i class="bi bi-sun-fill" id="toggle-dark"></i>
+            <h1 class="title-header">Calculadora de Calorias </h1>
 
             <div class="dados-corporal">
                 <input type="text" id="idade" placeholder="Sua Idade">
@@ -45,13 +44,32 @@
                 </select>
             </div>
 
-            <button class="btn-calcular">Calcular!</button>
+            <button class="btn-calcular">Calcular</button>
         </header>
 
         <main class="container-main">
             <h2 class="title-main">Aqui está o resultado:</h2>
             <div class="container-resultado-wrapper">
-                
+                <div class="resultado-values">
+                    <p>Seu Metabolismo basal é de
+                        <span class="result-calorias">0</span> calorias
+                    </p>
+                </div>
+                <div class="resultado-values">
+                    <p> Para manter o seu peso você precisa consumir em média
+                        <span class="result-manter_peso">0</span> calorias
+                    </p>
+                </div>
+                <div class="resultado-values">
+                    <p>Para perder peso você precisa consumir em média
+                        <span class="result-perder_peso">0</span> calorias
+                    </p>
+                </div>
+                <div class="resultado-values">
+                    <p>Para ganhar peso você precisa consumir em média
+                        <span class="result-ganhar_peso">0</span> calorias
+                    </p>
+                </div>
             </div>
         </main>
     </body>
