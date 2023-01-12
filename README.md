@@ -1,4 +1,4 @@
- <h1>Calculadora calorias</h1>
+ <h1>Calculadora sobre consumo de calorias</h1>
 <hr>
 <h2>Linguagens Utilizadas:</h2>
 
